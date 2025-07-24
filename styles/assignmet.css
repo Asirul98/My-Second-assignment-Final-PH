@@ -1,0 +1,645 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  /* color: #333; */
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #f6f9ff;
+  padding: 20px 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0px 180px 00px 180px; */
+}
+
+.logo img {
+  height: 60px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #a0a3bd;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a.active {
+  color: #000;
+  font-weight: bold;
+}
+
+.bold{
+  color: black;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #000;
+  font-size: 1rem;
+}
+
+.cart img {
+ 
+  width: 18px;
+  height: 18px;
+}
+
+/* FRESH FLOWERS SECTION */
+.fresh-flowers-section {
+  background-color: #f6f9ff;
+  /* padding: 600px 20px; */
+}
+
+.flowers-container {
+  max-width: 1100px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  padding: 40px;
+}
+/* .left{
+  width:130px;
+  heigh: 130px;;
+
+}
+.right{
+  margin-left:30px;
+} */
+
+.t-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.t-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.black{
+  color: #000;
+}
+
+.orange{
+  color: #f15b22;
+}
+
+.t-content p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.img-content {
+  flex: 1;
+  text-align: right;
+  min-width: 300px;
+}
+
+.img-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* OUR PLANTS SECTION */
+.container {
+  display: flex;
+  padding: 20px;
+  /* max-width: 900px; */
+  margin: 30px auto;
+  /* background: #fff; */
+  border-radius: 8px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.font {
+  font-size: 50px;
+}
+
+.plants-title {
+  color: orange;
+  font-size: 50px;
+}
+
+.plants-description {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  color: gray;
+}
+
+.flower-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.flower-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.flower-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.flower-card h2 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cart-btn {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.cart-btn:hover {
+  background-color: darkorange;
+}
+/* FLOWER SHOP IMAGE + BADGE SECTION */
+.shop-container{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 50px 180px 50px 180px;
+
+
+}
+.left-part {
+  position: relative;
+  width: 320px;
+  min-width: 320px;
+  margin-right: 70px;
+}
+
+.left-part img.main {
+  width: 100%;
+  height: 420px;
+  display: block;
+  border-radius: 5px;
+}
+
+.left-part img.badge {
+  position: absolute;
+  top: -65px;
+  margin-left: 225px;
+  width: 170px;
+  height: 170px;
+}
+
+.right-part h1 {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 18px;
+  line-height: 1.1em;
+}
+
+.right-part ul {
+  color: #555;
+  padding-left: 20px;
+  font-size: 1em;
+}
+
+.right-part li {
+  margin-bottom: 14px;
+}
+/* DEALS SECTION 
+.deals-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.deals-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  color: gray;
+}
+
+.deals-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.left-deals {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.deal-box {
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.deal-box.small {
+  height: 150px;
+}
+
+.deal-box.large {
+  flex: 2;
+  min-width: 300px;
+  height: 320px;
+}
+
+.deal-text {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.deal-text.center {
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  height: fit-content;
+}
+
+.deal-text h3,
+.deal-text h2 {
+  margin-bottom: 8px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.deal-text a {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.deal-text a:hover {
+  background-color: orange;
+}
+ HERO SECTION */
+ /* DEALS SECTION */
+.deals-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.deals-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  color: gray;
+}
+
+.deals-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.left-deals {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Deal Boxes */
+.deal-box {
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.deal-box.small {
+  height: 150px;
+}
+
+.deal-box.large {
+  flex: 2;
+  min-width: 300px;
+  height: 320px;
+}
+
+/* Dark Overlay */
+.deal-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* dark transparent overlay */
+  border-radius: 15px; /* match the box rounding */
+  /* z-index: 0; */
+}
+
+/* Deal Text (Centered & Above Overlay) */
+.deal-text {
+  position: relative;
+  z-index: 1; /* bring text in front of overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.deal-text.center {
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  height: fit-content;
+}
+
+.deal-text h3,
+.deal-text h2 {
+  margin-bottom: 8px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.deal-text a {
+  color: white;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: 550;
+  display: inline;
+}
+/* hero section heroooooo section */
+.hero {
+  background-image: url('news-letter-bg.png');
+  background-size: cover;
+  background-position: center;
+  padding: 180px 200px 200px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.email-subscribe {
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.email-subscribe input {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  font-size: 1rem;
+}
+
+.email-subscribe button {
+  background-color: #f15b22;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.email-subscribe button:hover {
+  background-color: #d94d1b;
+}
+/* FOOTER SECTION */
+.footer {
+  padding: 50px 20px;
+  color: grey;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.footer-left {
+  max-width: 250px;
+}
+
+.footer-left img.logo {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.footer-left p {
+  font-size: 0.95rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 80px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.column a {
+  text-decoration: none;
+  color: grey;
+  font-size: 0.95rem;
+}
+
+.column a:hover {
+  color: #f15b22;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.footer-icons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.footer-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* RESPONSIVE */
+@media (min-width: 1024px) {
+  .flower-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .hero {
+    padding: 180px 200px 200px;
+  }
+  .footer-content {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-links {
+    display: none;
+  }
+  .navbar-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  .cart img {
+    width: 26px;
+    height: 26px;
+  }
+  .cart span {
+    font-size: 16px;
+  }
+  .fresh-flowers-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .t-content,
+  .img-content {
+    text-align: center;
+  }
+  .flower-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .email-subscribe {
+    flex-direction: column;
+  }
+  .email-subscribe input,
+  .email-subscribe button {
+    width: 100%;
+    border-radius: 0;
+  }
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+  }
+  .footer-icons {
+    justify-content: center;
+  }
+}
+/* RESET 
