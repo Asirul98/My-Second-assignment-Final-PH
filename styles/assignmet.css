@@ -518,7 +518,7 @@ padding: 50px 180px 50px 180px;
   margin-top: 40px;
 }
 
-.footer-content {
+.footer-item {
   display: flex;
   max-width: 1100px;
   margin: 0 auto;
@@ -536,7 +536,7 @@ padding: 50px 180px 50px 180px;
   margin-bottom: 15px;
 }
 
-.footer-left p {
+.footer-leftpart p {
   font-size: 0.95rem;
 }
 
