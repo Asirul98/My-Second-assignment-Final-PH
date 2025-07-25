@@ -460,7 +460,7 @@ padding: 50px 180px 50px 180px;
   display: inline;
 }
 /* hero section heroooooo section */
-.hero {
+.form {
   background-image: url('news-letter-bg.png');
   background-size: cover;
   background-position: center;
@@ -469,12 +469,12 @@ padding: 50px 180px 50px 180px;
   position: relative;
 }
 
-.hero-content {
+.form-content {
   max-width: 600px;
   margin: 0 auto;
 }
 
-.hero h1 {
+.form h1 {
   color: white;
   font-size: 2.8rem;
   font-weight: 700;
