@@ -1,4 +1,4 @@
-/* RESET */
+
 * {
   margin: 0;
   padding: 0;
@@ -88,14 +88,6 @@ body {
   /* flex-wrap: wrap; */
   padding: 40px;
 }
-/* .left{
-  width:130px;
-  heigh: 130px;;
-
-}
-.right{
-  margin-left:30px;
-} */
 
 .t-content {
   flex: 1;
@@ -209,7 +201,7 @@ body {
 .cart-btn:hover {
   background-color: darkorange;
 }
-/* FLOWER SHOP IMAGE + BADGE SECTION */
+/* FLOWER SHOP IMAGE + BADGE part */
 .shop-container{
 display: flex;
 flex-direction: row;
@@ -258,8 +250,8 @@ padding: 50px 180px 50px 180px;
   margin-bottom: 14px;
 }
 
-/* Deal section */
-/*  
+
+/* Deal Boxes */
 .deal-box {
   background-size: cover;
   background-position: center;
@@ -279,67 +271,10 @@ padding: 50px 180px 50px 180px;
   height: 320px;
 }
 
-/* Dark Overlay 
-.deal-box::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.4); 
-  border-radius: 15px; 
-}
-
-/* Deal Text  
-.deal-text {
-  position: relative;
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.deal-text.center {
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  text-align: center;
-  height: fit-content;
-}
-
-.deal-text h3,
-.deal-text h2 {
-  margin-bottom: 8px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px #000;
-}
-
-.deal-text a {
-  color: white;
-  background: none;
-  padding: 0;
-  border-radius: 0;
-  text-decoration: underline;
-  font-size: 20px;
-  font-weight: 550;
-  display: inline;
-}
-  
-/* hero section heroooooo  section */
-/* DEALS SECTION */
 
 
 
-
+/* DEAL SECTION ADD AGSIN */
 
 .deals-section {
   padding: 50px 20px;
@@ -347,10 +282,12 @@ padding: 50px 180px 50px 180px;
 }
 
 .deals-section h1 {
-  font-size: 36px;
+  font-size: 50px;
   margin-bottom: 10px;
 }
-
+.highlight{
+  color: #f15b22;
+}
 .subtitle {
   max-width: 600px;
   margin: 0 auto 40px;
@@ -395,7 +332,7 @@ padding: 50px 180px 50px 180px;
   height: 320px;
 }
 
-/* Dark Overlay */
+/* Dark view color */
 .deal-box::before {
   content: '';
   position: absolute;
@@ -405,10 +342,9 @@ padding: 50px 180px 50px 180px;
   bottom: 0;
   background: rgba(0, 0, 0, 0.4); 
   border-radius: 15px; 
-  
 }
 
-/* Deal Text */
+/* Deal Text  */
 .deal-text {
   position: relative;
   z-index: 1; 
@@ -421,6 +357,7 @@ padding: 50px 180px 50px 180px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-size: 18px;
 }
 
 .deal-text.center {
@@ -431,6 +368,7 @@ padding: 50px 180px 50px 180px;
   margin: auto;
   text-align: center;
   height: fit-content;
+  font-size: 23px;
 }
 
 .deal-text h3,
@@ -450,6 +388,8 @@ padding: 50px 180px 50px 180px;
   font-weight: 550;
   display: inline;
 }
+
+
 .form {
   background-image: url('news-letter-bg.png');
   background-size: cover;
@@ -632,4 +572,4 @@ padding: 50px 180px 50px 180px;
     justify-content: center;
   }
 }
-/* RESET 
+
