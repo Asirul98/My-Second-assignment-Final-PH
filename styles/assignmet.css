@@ -219,21 +219,21 @@ padding: 50px 180px 50px 180px;
 
 
 }
-.left-part {
+.left-item {
   position: relative;
   width: 320px;
   min-width: 320px;
   margin-right: 70px;
 }
 
-.left-part img.main {
+.left-item img.main {
   width: 100%;
-  height: 420px;
+  height: 390px;
   display: block;
   border-radius: 5px;
 }
 
-.left-part img.badge {
+.left-item img.badge {
   position: absolute;
   top: -65px;
   margin-left: 225px;
@@ -241,57 +241,25 @@ padding: 50px 180px 50px 180px;
   height: 170px;
 }
 
-.right-part h1 {
+.right-item h1 {
   font-size: 2.2em;
   font-weight: bold;
   margin-bottom: 18px;
   line-height: 1.1em;
 }
 
-.right-part ul {
+.right-item ul {
   color: #555;
   padding-left: 20px;
   font-size: 1em;
 }
 
-.right-part li {
+.right-item li {
   margin-bottom: 14px;
 }
-/* DEALS SECTION 
-.deals-section {
-  padding: 50px 20px;
-  text-align: center;
-}
 
-.deals-section h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.subtitle {
-  max-width: 600px;
-  margin: 0 auto 40px;
-  font-size: 16px;
-  color: gray;
-}
-
-.deals-grid {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-}
-
-.left-deals {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  flex: 1;
-  min-width: 250px;
-}
-
+/* Deal section */
+/*  
 .deal-box {
   background-size: cover;
   background-position: center;
@@ -311,10 +279,31 @@ padding: 50px 180px 50px 180px;
   height: 320px;
 }
 
-.deal-text {
+/* Dark Overlay 
+.deal-box::before {
+  content: '';
   position: absolute;
-  bottom: 15px;
-  left: 15px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); 
+  border-radius: 15px; 
+}
+
+/* Deal Text  
+.deal-text {
+  position: relative;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .deal-text.center {
@@ -336,20 +325,22 @@ padding: 50px 180px 50px 180px;
 
 .deal-text a {
   color: white;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 8px 16px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: bold;
-  display: inline-block;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: 550;
+  display: inline;
 }
+  
+/* hero section heroooooo  section */
+/* DEALS SECTION */
 
-.deal-text a:hover {
-  background-color: orange;
-}
- HERO SECTION */
- /* DEALS SECTION */
+
+
+
+
 .deals-section {
   padding: 50px 20px;
   text-align: center;
@@ -412,15 +403,15 @@ padding: 50px 180px 50px 180px;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4); /* dark transparent overlay */
-  border-radius: 15px; /* match the box rounding */
-  /* z-index: 0; */
+  background: rgba(0, 0, 0, 0.4); 
+  border-radius: 15px; 
+  
 }
 
-/* Deal Text (Centered & Above Overlay) */
+/* Deal Text */
 .deal-text {
   position: relative;
-  z-index: 1; /* bring text in front of overlay */
+  z-index: 1; 
   position: absolute;
   top: 0;
   left: 0;
@@ -459,7 +450,6 @@ padding: 50px 180px 50px 180px;
   font-weight: 550;
   display: inline;
 }
-/* hero section heroooooo section */
 .form {
   background-image: url('news-letter-bg.png');
   background-size: cover;
